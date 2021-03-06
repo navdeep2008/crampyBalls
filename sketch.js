@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Render = Matter.Render;
 var dustbinObj,groundObject	
-var world;
+var world , paperBall;
 
 
 function setup() {
@@ -17,6 +17,7 @@ function setup() {
 	
 	groundObject=new ground(width/2,550,width,20);
 	dustbinObj=new dustbin(1050,540);
+	paperBall=new paperBall(20,20,10,10);
 
 	Engine.run(engine);
   
@@ -30,7 +31,7 @@ function draw() {
 
   groundObject.display();
   dustbinObj.display();
-  paper.display()
+  paperBall.display()
 
 }
 
